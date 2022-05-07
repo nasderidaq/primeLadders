@@ -12,3 +12,14 @@ e.g. For 2-digit primes, the maximum optimal path length is 4. One such path is 
 
 ## Strategy
 
+The program is able to calculate answers in any base, and can allow for leading 0s if desired (e.g. treating "043" as a 3-digit prime).
+
+## Results
+
+| Digits | Length | Start Prime | End Prime | Possible Path |
+|--------|--------|-------------|-----------|---------------|
+|      2 |      4 |             |           |               |
+|      3 |      7 |             |           |               |
+|      4 |      9 |             |           |               |
+|      5 |     11 |             |           |               |
+|      6 |     13 |      440497 |    995833 |               |
