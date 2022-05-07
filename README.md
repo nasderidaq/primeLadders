@@ -14,7 +14,7 @@ e.g. For 2-digit primes, the maximum optimal path length is 4. One such path is 
 
 Generation of primes is done using a simple [sieve](https://en.wikipedia.org/wiki/Generation_of_primes#Prime_sieves) up to the largest value in the n-digit range. Once generated, the algorithm iterates over every prime in the range and tries mutating each digit to each possible value to see if a valid prime is created. Each valid resulting prime is then stored in a list associated with that prime, which logically forms an unweighted and undirected graph connecting the primes.
 
-The determination of the [diameter](https://mathworld.wolfram.com/GraphDiameter.html) is done by once again visiting each prime in the range, and then doing a breadth-first enumeration of all accessible primes. The number of steps taken in this search is the distance to the fartherst prime.
+The determination of the [diameter](https://mathworld.wolfram.com/GraphDiameter.html) is done by once again visiting each prime in the range, and then doing a breadth-first enumeration of all accessible primes. The number of steps taken in this search is the distance to the fartherst number from the starting prime.
 
 The program is able to calculate answers in any base, and can allow for leading 0s if desired (e.g. treating "043" as a 3-digit prime).
 
