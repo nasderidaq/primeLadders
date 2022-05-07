@@ -16,7 +16,7 @@ Generation of primes is done using a simple [sieve](https://en.wikipedia.org/wik
 
 The determination of the [diameter](https://mathworld.wolfram.com/GraphDiameter.html) is done by once again visiting each prime in the range, and then doing a breadth-first enumeration of all accessible primes. The number of steps taken in this search is the distance to the fartherst number from the starting prime.
 
-The sieve and the connectivity generation are fast. The diameter search gets slow (O(numPrimes^2)), taking roughly a second for an exhaustive 4-digit run, 90 seconds for a 5 digit run, and a couple hours for 6 digits.
+The sieve and the connectivity generation are fast. The diameter search gets slow (O(numPrimes<sup>2</sup>)), taking roughly a second for an exhaustive 4-digit run, 90 seconds for a 5 digit run, and a couple hours for 6 digits.
 
 The program is able to calculate answers in any base, and can allow for leading 0s if desired (e.g. treating "047" as a 3-digit prime).
 
